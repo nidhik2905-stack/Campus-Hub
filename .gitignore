@@ -1,0 +1,42 @@
+# Node / React / Vite
+node_modules/
+dist/
+.vite/
+coverage/
+*.log
+
+# Java / Maven / Spring Boot
+target/
+.classpath
+.project
+.settings/
+.idea/
+*.iml
+*.class
+*.jar
+*.war
+*.ear
+
+# IntelliJ / VS Code / Windows
+.vscode/
+*.code-workspace
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Environment variables / secrets
+.env
+.env.*
+!.env.example
+!.env.*.example
+
+# Build and runtime
+*.pid
+*.log
+logs/
+uploads/
+secrets/
+
+# Database backups / local data
+*.sql
+!database/**/*.sql
