@@ -14,12 +14,7 @@ export default function LoginPage() {
 
   const handleSignIn = (e) => {
     e.preventDefault();
-    if (selectedDemoRole === 'student') navigate('/student');
-    else if (selectedDemoRole === 'faculty') navigate('/faculty');
-    else if (selectedDemoRole === 'hod') navigate('/hod');
-    else if (selectedDemoRole === 'dean') navigate('/dean');
-    else if (selectedDemoRole === 'examination') navigate('/examination');
-    else if (selectedDemoRole === 'admin') navigate('/admin');
+    navigate(`/${selectedDemoRole}`);
   };
 
   return (

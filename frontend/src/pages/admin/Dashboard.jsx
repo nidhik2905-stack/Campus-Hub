@@ -1,16 +1,12 @@
 // src/pages/admin/Dashboard.jsx
 import React, { useState } from 'react';
 import {
-  ShieldCheck,
   Users,
   Activity,
-  Server,
   Shield,
   Settings,
   Building,
-  Key,
   Database,
-  CheckCircle2,
 } from 'lucide-react';
 import Card from '../../components/common/Card';
 import Badge from '../../components/common/Badge';

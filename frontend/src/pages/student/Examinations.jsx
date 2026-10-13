@@ -7,7 +7,6 @@ import {
   MapPin,
   CheckCircle2,
   AlertCircle,
-  FileText,
   Award,
   Download,
 } from 'lucide-react';

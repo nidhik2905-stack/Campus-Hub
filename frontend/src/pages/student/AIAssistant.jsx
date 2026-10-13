@@ -1,6 +1,6 @@
 // src/pages/student/AIAssistant.jsx
 import React, { useState } from 'react';
-import { Sparkles, Send, Bot, User, Info, Database, ShieldCheck, RefreshCw, MessageSquare } from 'lucide-react';
+import { Sparkles, Send, Bot, User, Info, Database, ShieldCheck, RefreshCw } from 'lucide-react';
 import Card from '../../components/common/Card';
 import Badge from '../../components/common/Badge';
 import Button from '../../components/common/Button';

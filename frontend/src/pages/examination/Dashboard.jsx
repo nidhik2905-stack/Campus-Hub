@@ -3,9 +3,6 @@ import React, { useState } from 'react';
 import {
   ClipboardList,
   Calendar,
-  CreditCard,
-  MapPin,
-  CheckCircle,
   PlusCircle,
   FileCheck,
   Award,

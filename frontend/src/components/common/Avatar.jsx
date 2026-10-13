@@ -8,6 +8,25 @@ const sizeMap = {
   xl: 'w-20 h-20 text-xl',
 };
 
+function getInitials(fullName) {
+  if (!fullName) {
+    return 'U';
+  }
+
+  const parts = fullName.trim().split(' ');
+
+  if (parts.length === 1) {
+    return parts[0][0].toUpperCase();
+  }
+
+  return (parts[0][0] + parts[1][0]).toUpperCase();
+}
+
+const statusColors = {
+  online: 'bg-emerald-500',
+  busy: 'bg-rose-500',
+};
+
 export default function Avatar({
   src,
   alt = 'User avatar',
@@ -16,16 +35,9 @@ export default function Avatar({
   className = '',
   status = null,
 }) {
-  const initials = name
-    ? name
-        .split(' ')
-        .map((n) => n[0])
-        .slice(0, 2)
-        .join('')
-        .toUpperCase()
-    : 'U';
-
+  const initials = getInitials(name);
   const sizeClass = sizeMap[size] || sizeMap.md;
+  const statusColor = statusColors[status] || 'bg-slate-400';
 
   return (
     <div className={`relative inline-block shrink-0 ${className}`}>
@@ -44,13 +56,7 @@ export default function Avatar({
       )}
       {status && (
         <span
-          className={`absolute bottom-0 right-0 block h-2.5 w-2.5 rounded-full ring-2 ring-white ${
-            status === 'online'
-              ? 'bg-emerald-500'
-              : status === 'busy'
-              ? 'bg-rose-500'
-              : 'bg-slate-400'
-          }`}
+          className={`absolute bottom-0 right-0 block h-2.5 w-2.5 rounded-full ring-2 ring-white ${statusColor}`}
         />
       )}
     </div>

@@ -4,7 +4,7 @@ import { Outlet } from 'react-router-dom';
 import Sidebar from './Sidebar';
 import Topbar from './Topbar';
 
-export default function DashboardLayout({ children }) {
+export default function DashboardLayout() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   return (
@@ -20,7 +20,7 @@ export default function DashboardLayout({ children }) {
         <Topbar onMenuClick={() => setIsSidebarOpen(true)} />
 
         <main className="flex-1 p-4 sm:p-6 lg:p-8 max-w-[1600px] w-full mx-auto">
-          {children || <Outlet />}
+          <Outlet />
         </main>
       </div>
     </div>

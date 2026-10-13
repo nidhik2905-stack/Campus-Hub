@@ -1,16 +1,11 @@
 // src/pages/faculty/Dashboard.jsx
 import React, { useState } from 'react';
 import {
-  Users,
   BookOpen,
-  CheckSquare,
   Bell,
   PlusCircle,
   Upload,
   Calendar,
-  FileText,
-  Clock,
-  ExternalLink,
 } from 'lucide-react';
 import Card from '../../components/common/Card';
 import Badge from '../../components/common/Badge';

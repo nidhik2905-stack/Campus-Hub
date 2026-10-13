@@ -1,9 +1,8 @@
 // src/pages/student/Profile.jsx
 import React, { useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
-import { User, Mail, Phone, MapPin, Award, BookOpen, Shield, Bell, Lock, Key } from 'lucide-react';
+import { User, Mail, Phone, BookOpen, Lock } from 'lucide-react';
 import Card from '../../components/common/Card';
-import Badge from '../../components/common/Badge';
 import Button from '../../components/common/Button';
 import Input from '../../components/common/Input';
 import Avatar from '../../components/common/Avatar';

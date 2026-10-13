@@ -1,7 +1,7 @@
 // src/pages/student/Search.jsx
 import React, { useState, useEffect } from 'react';
 import { useSearchParams, useNavigate } from 'react-router-dom';
-import { Search as SearchIcon, Clock, TrendingUp, ArrowRight, Tag, BookOpen } from 'lucide-react';
+import { Search as SearchIcon, Clock, TrendingUp, ArrowRight } from 'lucide-react';
 import Card from '../../components/common/Card';
 import Badge from '../../components/common/Badge';
 import Button from '../../components/common/Button';

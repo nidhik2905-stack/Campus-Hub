@@ -1,6 +1,6 @@
 // src/pages/student/Timetable.jsx
 import React, { useState } from 'react';
-import { Clock, Calendar, User, MapPin, Download, BookOpen, Layers } from 'lucide-react';
+import { Clock, User, MapPin, Download } from 'lucide-react';
 import Card from '../../components/common/Card';
 import Badge from '../../components/common/Badge';
 import Button from '../../components/common/Button';

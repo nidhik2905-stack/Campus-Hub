@@ -1,6 +1,6 @@
 // src/pages/student/Notices.jsx
-import React, { useState, useMemo } from 'react';
-import { Search, Filter, Bell, Calendar, Building, Eye, ChevronRight } from 'lucide-react';
+import React, { useState } from 'react';
+import { Search, Bell, Calendar, Building, Eye } from 'lucide-react';
 import Card from '../../components/common/Card';
 import Badge from '../../components/common/Badge';
 import Button from '../../components/common/Button';
@@ -36,17 +36,15 @@ export default function NoticesPage() {
   const [selectedDept, setSelectedDept] = useState('ALL');
   const [activeModalNotice, setActiveModalNotice] = useState(null);
 
-  const filteredNotices = useMemo(() => {
-    return latestNotices.filter((n) => {
-      const matchSearch =
-        n.title.toLowerCase().includes(search.toLowerCase()) ||
-        n.description.toLowerCase().includes(search.toLowerCase()) ||
-        n.department.toLowerCase().includes(search.toLowerCase());
-      const matchCat = selectedCategory === 'ALL' || n.category === selectedCategory;
-      const matchDept = selectedDept === 'ALL' || n.department === selectedDept;
-      return matchSearch && matchCat && matchDept;
-    });
-  }, [search, selectedCategory, selectedDept]);
+  const filteredNotices = latestNotices.filter((n) => {
+    const matchSearch =
+      n.title.toLowerCase().includes(search.toLowerCase()) ||
+      n.description.toLowerCase().includes(search.toLowerCase()) ||
+      n.department.toLowerCase().includes(search.toLowerCase());
+    const matchCat = selectedCategory === 'ALL' || n.category === selectedCategory;
+    const matchDept = selectedDept === 'ALL' || n.department === selectedDept;
+    return matchSearch && matchCat && matchDept;
+  });
 
   return (
     <div className="space-y-6">

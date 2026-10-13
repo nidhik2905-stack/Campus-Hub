@@ -44,8 +44,6 @@ export default function Sidebar({ isOpen, onClose }) {
   const navigate = useNavigate();
   const location = useLocation();
 
-  const currentRole = roleOptions.find((r) => location.pathname.startsWith(r.path)) || roleOptions[0];
-
   return (
     <>
       {/* Mobile Backdrop */}
@@ -102,7 +100,7 @@ export default function Sidebar({ isOpen, onClose }) {
               <NavLink
                 key={item.path}
                 to={item.path}
-                onClick={() => onClose && onClose()}
+                onClick={onClose}
                 className={({ isActive }) =>
                   `group flex items-center justify-between px-3.5 py-2.5 rounded-xl text-sm font-medium transition-all duration-150 ${
                     isActive
@@ -140,7 +138,7 @@ export default function Sidebar({ isOpen, onClose }) {
                 <NavLink
                   key={role.path}
                   to={role.path}
-                  onClick={() => onClose && onClose()}
+                  onClick={onClose}
                   className={`flex items-center gap-3 px-3.5 py-2 rounded-xl text-xs font-medium transition-colors ${
                     isCurrent
                       ? 'bg-slate-800 text-cyan-400 font-semibold border border-cyan-500/30'
@@ -160,7 +158,7 @@ export default function Sidebar({ isOpen, onClose }) {
 
           <NavLink
             to="/student/profile"
-            onClick={() => onClose && onClose()}
+            onClick={onClose}
             className={({ isActive }) =>
               `flex items-center gap-3 px-3.5 py-2.5 rounded-xl text-sm font-medium transition-colors ${
                 isActive
@@ -175,7 +173,7 @@ export default function Sidebar({ isOpen, onClose }) {
 
           <NavLink
             to="/student/profile?tab=settings"
-            onClick={() => onClose && onClose()}
+            onClick={onClose}
             className="flex items-center gap-3 px-3.5 py-2.5 rounded-xl text-sm font-medium text-slate-300 hover:text-white hover:bg-slate-800/70 transition-colors"
           >
             <Settings className="h-4 w-4 text-slate-400" />
