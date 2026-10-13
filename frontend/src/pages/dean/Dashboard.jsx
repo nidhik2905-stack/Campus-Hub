@@ -1,18 +1,14 @@
 // src/pages/dean/Dashboard.jsx
 import React from 'react';
 import {
-  Award,
   Building,
-  Users,
   FileText,
   Calendar,
-  CheckCircle,
-  TrendingUp,
 } from 'lucide-react';
 import Card from '../../components/common/Card';
 import Badge from '../../components/common/Badge';
 import Button from '../../components/common/Button';
-import { deanRoleData, latestNotices } from '../../utils/mockData';
+import { deanRoleData } from '../../utils/mockData';
 
 export default function DeanDashboard() {
   return (

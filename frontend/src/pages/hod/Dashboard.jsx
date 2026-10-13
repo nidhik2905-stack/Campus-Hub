@@ -1,16 +1,12 @@
 // src/pages/hod/Dashboard.jsx
 import React, { useState } from 'react';
 import {
-  Building2,
   Users,
-  GraduationCap,
-  Layers,
   Megaphone,
   Calendar,
   Clock,
   Upload,
   PlusCircle,
-  FileText,
 } from 'lucide-react';
 import Card from '../../components/common/Card';
 import Badge from '../../components/common/Badge';

@@ -1,5 +1,5 @@
 // src/pages/student/Documents.jsx
-import React, { useState, useMemo } from 'react';
+import React, { useState } from 'react';
 import {
   FolderClosed,
   Search,
@@ -34,15 +34,13 @@ export default function DocumentsPage() {
   const [previewDoc, setPreviewDoc] = useState(null);
   const [downloadSuccess, setDownloadSuccess] = useState(null);
 
-  const filteredDocs = useMemo(() => {
-    return campusDocuments.filter((doc) => {
-      const matchSearch =
-        doc.title.toLowerCase().includes(search.toLowerCase()) ||
-        doc.department.toLowerCase().includes(search.toLowerCase());
-      const matchCat = selectedCat === 'ALL' || doc.category === selectedCat;
-      return matchSearch && matchCat;
-    });
-  }, [search, selectedCat]);
+  const filteredDocs = campusDocuments.filter((doc) => {
+    const matchSearch =
+      doc.title.toLowerCase().includes(search.toLowerCase()) ||
+      doc.department.toLowerCase().includes(search.toLowerCase());
+    const matchCat = selectedCat === 'ALL' || doc.category === selectedCat;
+    return matchSearch && matchCat;
+  });
 
   const handleDownload = (doc) => {
     setDownloadSuccess(doc.id);

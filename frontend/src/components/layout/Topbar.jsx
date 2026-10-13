@@ -9,7 +9,6 @@ import {
   User,
   Settings,
   LogOut,
-  ExternalLink,
   CheckCircle2,
 } from 'lucide-react';
 import Avatar from '../common/Avatar';

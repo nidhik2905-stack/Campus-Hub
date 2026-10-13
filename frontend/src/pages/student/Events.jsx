@@ -1,6 +1,6 @@
 // src/pages/student/Events.jsx
 import React, { useState } from 'react';
-import { Calendar as CalendarIcon, MapPin, Clock, Users, Tag, CheckCircle } from 'lucide-react';
+import { Calendar as CalendarIcon, MapPin, Clock, Users, CheckCircle } from 'lucide-react';
 import Card from '../../components/common/Card';
 import Badge from '../../components/common/Badge';
 import Button from '../../components/common/Button';

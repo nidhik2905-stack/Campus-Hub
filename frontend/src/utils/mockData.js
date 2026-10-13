@@ -17,7 +17,7 @@ export const currentUser = {
   expectedGraduation: '2026',
   cgpa: '8.74',
   attendance: '89.5%',
-  avatar: '/assets/student_rahul.jpg',
+  avatar: null,
   advisor: 'Dr. S. K. Venkataraman',
   address: 'Room 304, Boys Hostel Block-B, University Campus',
 };

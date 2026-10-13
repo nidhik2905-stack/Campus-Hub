@@ -1,7 +1,7 @@
 // src/pages/student/Dashboard.jsx
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { ArrowRight, Link as LinkIcon, FileText, Calendar, Clock, MapPin } from 'lucide-react';
+import { ArrowRight, Link as LinkIcon, Clock, MapPin } from 'lucide-react';
 import WelcomeBanner from '../../components/dashboard/WelcomeBanner';
 import StatCard from '../../components/dashboard/StatCard';
 import NoticeCard from '../../components/dashboard/NoticeCard';
