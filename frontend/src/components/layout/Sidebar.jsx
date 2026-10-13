@@ -184,39 +184,7 @@ export default function Sidebar({ isOpen, onClose }) {
         {/* Sidebar University Illustration Footer */}
         <div className="p-4 mx-3 mb-3 rounded-2xl bg-gradient-to-b from-[#13223f] to-[#0c1628] border border-blue-900/40 text-center relative overflow-hidden">
           <div className="relative z-10 flex flex-col items-center">
-            {/* SVG University Building Silhouette */}
-            <svg
-              className="h-12 w-28 text-cyan-300 opacity-90 mb-1"
-              viewBox="0 0 140 60"
-              fill="currentColor"
-            >
-              {/* Roof Dome */}
-              <path d="M70 4 C60 4 58 14 58 18 L82 18 C82 14 80 4 70 4 Z" fill="currentColor" opacity="0.9" />
-              <rect x="68" y="0" width="4" height="4" fill="currentColor" />
-              {/* Pediment Triangle */}
-              <polygon points="46,26 70,16 94,26" fill="currentColor" />
-              {/* Entablature */}
-              <rect x="42" y="26" width="56" height="4" fill="currentColor" />
-              {/* Columns */}
-              <rect x="46" y="30" width="4" height="22" fill="currentColor" opacity="0.85" />
-              <rect x="58" y="30" width="4" height="22" fill="currentColor" opacity="0.85" />
-              <rect x="70" y="30" width="4" height="22" fill="currentColor" opacity="0.85" />
-              <rect x="78" y="30" width="4" height="22" fill="currentColor" opacity="0.85" />
-              <rect x="90" y="30" width="4" height="22" fill="currentColor" opacity="0.85" />
-              {/* Wings */}
-              <rect x="14" y="28" width="30" height="24" fill="currentColor" opacity="0.75" />
-              <rect x="96" y="28" width="30" height="24" fill="currentColor" opacity="0.75" />
-              {/* Wing Windows */}
-              <rect x="18" y="32" width="6" height="8" rx="2" fill="#0b1528" />
-              <rect x="28" y="32" width="6" height="8" rx="2" fill="#0b1528" />
-              <rect x="36" y="32" width="6" height="8" rx="2" fill="#0b1528" />
-              <rect x="100" y="32" width="6" height="8" rx="2" fill="#0b1528" />
-              <rect x="108" y="32" width="6" height="8" rx="2" fill="#0b1528" />
-              <rect x="116" y="32" width="6" height="8" rx="2" fill="#0b1528" />
-              {/* Steps/Base */}
-              <rect x="6" y="52" width="128" height="4" fill="currentColor" />
-              <rect x="2" y="56" width="136" height="4" fill="currentColor" opacity="0.8" />
-            </svg>
+            <Building2 className="h-9 w-9 text-cyan-300 opacity-90 mb-2" />
             <p className="text-[11px] font-semibold text-cyan-200 tracking-wider">
               Learn • Connect • Grow
             </p>

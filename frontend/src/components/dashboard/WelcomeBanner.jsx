@@ -13,7 +13,7 @@ export default function WelcomeBanner({
       <img
         src="/assets/campus_banner.jpg"
         alt="Campus Panorama"
-        className="absolute inset-0 h-full w-full object-cover object-center opacity-45 brightness-90 mix-blend-luminosity filter contrast-125 transition-transform duration-700 hover:scale-105"
+        className="absolute inset-0 h-full w-full object-cover object-center opacity-40 transition-transform duration-700 hover:scale-105"
       />
       {/* Dark Navy / Indigo Gradient Overlay */}
       <div className="absolute inset-0 bg-gradient-to-r from-[#09152b] via-[#0d1f3f]/90 to-[#071329]/75" />

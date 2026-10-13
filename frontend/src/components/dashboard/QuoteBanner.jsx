@@ -20,7 +20,7 @@ export default function QuoteBanner() {
           <img
             src="/assets/students_walk.jpg"
             alt="Students on Campus"
-            className="h-full w-full object-cover object-center filter saturate-110"
+            className="h-full w-full object-cover object-center"
           />
         </div>
       </div>
@@ -33,19 +33,7 @@ export default function QuoteBanner() {
         <span className="font-serif italic text-base sm:text-lg font-medium text-slate-600 -mt-1">
           Stronger Together
         </span>
-        <svg
-          className="w-28 h-3 text-cyan-600 mt-1"
-          viewBox="0 0 100 12"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M2 9C28 2 72 2 98 9"
-            stroke="currentColor"
-            strokeWidth="2.5"
-            strokeLinecap="round"
-          />
-        </svg>
+        <div className="w-24 h-1 bg-cyan-600 rounded-full mt-2" />
       </div>
     </div>
   );
